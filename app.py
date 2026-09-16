@@ -27,8 +27,10 @@ gender = st.selectbox(
 
 SeniorCitizen = st.selectbox(
     "Senior Citizen",
-    [0, 1]
+    ["No", "Yes"]
 )
+
+SeniorCitizen = 1 if SeniorCitizen == "Yes" else 0
 
 Partner = st.selectbox(
     "Partner",
